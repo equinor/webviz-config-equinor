@@ -1,0 +1,27 @@
+language: python
+cache: pip
+
+addons:
+    chrome: stable
+
+python:
+  - "3.6"
+
+matrix:
+  fast_finish: true
+
+before_install:
+  - sudo apt-get -qq update
+
+script:
+  - pip install .
+  - pip install .[tests]
+  - pycodestyle webviz_config_equinor
+
+deploy:
+  - provider: pypi
+    user: webviz
+    password:
+      secure: RcB40fO+hek+prhJZ1dlaoazZ6Kf/l6Hrt5Xw4UDtrPXOeaG1BSS+CcS2u7s6Hhbrj77HnQTjVreOY63Iw8UW3wc0vpIkaAyqcZ9dXdjsR45G/p43jSmoc6oPK26W7H1sOb7hJYhZ5rWI0pMcmAs+9RVncj4hZaKBr0sieJTvBn+zfWfghayTv0USR5J2C7HYGCsEbZjBdtahGssFMGr/MOYWSCYePQ8QsZo0qm/1rEbAOYilaBz4lmanvW444FOl2mcH9cPVbNT97gnQzSVs9vHIhmZY1Zos3cV2ymrh8M5CG4qXAY58lAJPyGWPsBeulBeD4kiqNp4c+CknPlDi1tPv0boxHlBs7WVlJjLETITKS/uyGRaIuMFix5pH1XlTAZ9F/LM1Em/lPOAeL7xg6PqTggwA7mL3Y0ITIiq/5QmedxyGatrCG2pQtFF9pFmMQ7pkgrN/qETVT4A1dwXb0RREEiQfmFBWaK+aM+05gjw3mzX+dTUuebxYga5mG99qs3shGDthwUIEKGV7GvlR4F97fRPNLN7F2hvgYffqH4qUg+zUc+5dirFpKPYM1mdd638JcVUbYZw/c3KmjUJp5CA4Ozh4cQ9b1iNv1Hp1DjlYNM4yp6LwDppMsHsAMFtW66og548yMhJELhw3DoM+QuHaixlLEvMZfEx1vbz6a4=
+    on:
+      tags: true
