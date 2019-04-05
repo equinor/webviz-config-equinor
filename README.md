@@ -1,10 +1,26 @@
+[![PyPI version](https://badge.fury.io/py/webviz-config-equinor.svg)](https://badge.fury.io/py/webviz-config-equinor)
+[![Build Status](https://travis-ci.org/equinor/webviz-config-equinor.svg?branch=master)](https://travis-ci.org/equinor/webviz-config-equinor)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/eafe7dfd1b274c02a78de59bb8b8778f)](https://www.codacy.com/app/anders-kiaer/webviz-config-equinor?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=equinor/webviz-config-equinor&amp;utm_campaign=Badge_Grade)
+[![Python 3.6+](https://img.shields.io/badge/python-3.6+-blue.svg)](https://www.python.org/)
+
 # Webviz config theme for Equinor
 
 Enables Equinor theme for Webviz applications build through `webviz-config`.
 
-In order to install run `pip install .`. After installation you can enable
-the Equinor theme by e.g.
+The simplest way of installing `webviz-config-equinor` is to run
+```bash
+pip install webviz-config-equinor
+```
 
+If you want to download the latest source code and install it manually you 
+can run
+```bash
+git clone git@github.com:equinor/webviz-config-equinor.git
+cd webviz-config-equinor
+pip install .
+```
+
+After installation you can enable the Equinor theme by e.g.
 ```bash
 webviz build your_config.yaml --theme equinor
 ```
