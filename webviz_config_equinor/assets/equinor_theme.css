@@ -1,5 +1,5 @@
 ._dash-loading-callback {
-  
+
   animation: fadein 4.0s;
 
   position: absolute;
@@ -8,7 +8,7 @@
   width: 100%;
   height: 100%;
 
-  background-image: url(./equinor_logo_animation.gif), 
+  background-image: url(./equinor_logo_animation.gif),
                     radial-gradient(rgba(255, 255, 255, 0.9) 30%,
                                     rgba(255, 255, 255, 0.5) 90%);
 
@@ -26,4 +26,18 @@
     0%   { opacity: 0; }
     40%  { opacity: 0; }
     100% { opacity: 1; }
+}
+
+#logo {
+    margin: 20px 30px;
+}
+
+div.styledLogo.tab {
+    border: none;
+    background: transparent;
+    outline: none;
+    cursor: pointer;
+    text-align: left;
+    box-sizing: none;
+    padding: 20px 30px;
 }
