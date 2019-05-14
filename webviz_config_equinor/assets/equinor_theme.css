@@ -31,3 +31,13 @@
 #logo {
     margin: 20px 30px;
 }
+
+div.styledLogo.tab {
+    border: none;
+    background: transparent;
+    outline: none;
+    cursor: pointer;
+    text-align: left;
+    box-sizing: none;
+    padding: 20px 30px;
+}
