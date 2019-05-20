@@ -25,7 +25,7 @@ setup(
         ]
     },
     install_requires=[
-        'webviz-config==0.0.4'
+        'webviz-config>=0.0.4'
     ],
     tests_require=tests_require,
     extras_require={'tests': tests_require},
