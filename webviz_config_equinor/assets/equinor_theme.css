@@ -52,8 +52,6 @@ div.styledLogo.tab {
     statement can be removed.
 */
 
-/* csslint ignore:start */
-
 table {
     color: rgb(51, 51, 51);
     border: solid white;
@@ -61,32 +59,32 @@ table {
 }
 
 td {
-    padding: 10px !important;
+    padding: 10px !important;  /* csslint allow: important */
     margin: 5px;
     border: 1px solid white;
-    box-shadow: none !important;
+    box-shadow: none !important;  /* csslint allow: important */
 }
 
 th {
-    background-color: rgb(255, 18, 67) !important;
+    background-color: rgb(255, 18, 67) !important;  /* csslint allow: important */
     color: white;
-    padding: 10px !important;
+    padding: 10px !important;  /* csslint allow: important */
     margin: 5px;
     border: 1px solid white;
-    box-shadow: none !important;
+    box-shadow: none !important;  /* csslint allow: important */
 }
 
 tr:nth-child(even) {
-    background-color: rgb(255, 204, 207) !important;
+    background-color: rgb(255, 204, 207) !important;  /* csslint allow: important */
 }
 
 tr:nth-child(odd) {
-    background-color: rgb(255, 231, 231) !important;
+    background-color: rgb(255, 231, 231) !important;  /* csslint allow: important */
 }
 
 .dash-header th, .dash-header span, .dash-filter input {
-    font-weight: bold !important;
-    color: white !important;
+    font-weight: bold !important;  /* csslint allow: important */
+    color: white !important;  /* csslint allow: important */
 }
 
 /* csslint ignore:end */
