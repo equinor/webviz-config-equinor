@@ -46,7 +46,7 @@ div.styledLogo.tab {
     Equinor branded table 
 
     As of dash-table 3.6.0, styles are made inline. Therefore the use
-    of !important to override dash-table default style with Equinor style
+    of !important to override dash-table default style with Equinor style.
 
     When inline styles are removed from dash data-table, the !important
     statement can be removed.
@@ -86,5 +86,3 @@ tr:nth-child(odd) {
     font-weight: bold !important;  /* csslint allow: important */
     color: white !important;  /* csslint allow: important */
 }
-
-/* csslint ignore:end */
