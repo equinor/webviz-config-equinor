@@ -25,3 +25,24 @@ equinor_theme.assets = glob.glob(os.path.join(
     'assets',
     '*')
 )
+
+equinor_theme.plotly_layout = {
+    'font': {'family': 'Equinor'},
+    'hoverlabel': {'font': {'family': 'Equinor'}},
+    'colorway': ['#007079',
+                 '#66737d',
+                 '#7d0023',
+                 '#4c9ba1',
+                 '#a44c65',
+                 '#80b7bc',
+                 '#ff1243',
+                 '#919ba2',
+                 '#be8091',
+                 '#b2d4d7',
+                 '#ff597b',
+                 '#bdc3c7',
+                 '#d8b2bd',
+                 '#ffe7d6',
+                 '#d5eaf4',
+                 '#ff88a1']
+    }
