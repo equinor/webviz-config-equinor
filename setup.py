@@ -4,7 +4,7 @@ with open('README.md', 'r') as fh:
     long_description = fh.read()
 
 tests_require = [
-    'pycodestyle>=2.5.0'
+    'pycodestyle~=2.5'
 ]
 
 setup(
@@ -25,11 +25,11 @@ setup(
         ]
     },
     install_requires=[
-        'webviz-config>=0.0.4'
+        'webviz-config~=0.0.4'
     ],
     tests_require=tests_require,
     extras_require={'tests': tests_require},
-    setup_requires=['setuptools_scm>=3.2.0'],
+    setup_requires=['setuptools_scm~=3.2'],
     use_scm_version=True,
     zip_safe=False,
     classifiers=[
