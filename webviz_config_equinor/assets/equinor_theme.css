@@ -2,7 +2,7 @@
 
   animation: fadein 4.0s;
 
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -40,4 +40,49 @@ div.styledLogo.tab {
     text-align: left;
     box-sizing: none;
     padding: 20px 30px;
+}
+
+/* 
+    Equinor branded table 
+
+    As of dash-table 3.6.0, styles are made inline. Therefore the use
+    of !important to override dash-table default style with Equinor style.
+
+    When inline styles are removed from dash data-table, the !important
+    statement can be removed.
+*/
+
+table {
+    color: rgb(51, 51, 51);
+    border: solid white;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 10px !important;  /* csslint allow: important */
+    margin: 5px;
+    border: 1px solid white;
+    box-shadow: none !important;  /* csslint allow: important */
+}
+
+th {
+    background-color: rgb(255, 18, 67) !important;  /* csslint allow: important */
+    color: white;
+    padding: 10px !important;  /* csslint allow: important */
+    margin: 5px;
+    border: 1px solid white;
+    box-shadow: none !important;  /* csslint allow: important */
+}
+
+tr:nth-child(even) {
+    background-color: rgb(255, 204, 207) !important;  /* csslint allow: important */
+}
+
+tr:nth-child(odd) {
+    background-color: rgb(255, 231, 231) !important;  /* csslint allow: important */
+}
+
+.dash-header th, .dash-header span, .dash-filter input {
+    font-weight: bold !important;  /* csslint allow: important */
+    color: white !important;  /* csslint allow: important */
 }
