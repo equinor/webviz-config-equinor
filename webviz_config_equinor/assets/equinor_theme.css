@@ -86,3 +86,27 @@ tr:nth-child(odd) {
     font-weight: bold !important;  /* csslint allow: important */
     color: white !important;  /* csslint allow: important */
 }
+
+/*Equinor colors for Dash slider components (based on rc-slider)*/
+.rc-slider-track {
+  background-color: rgb(234, 244, 249);
+}
+
+.rc-slider-dot-active {  
+  border-color: rgb(36, 55, 70);
+  border: solid 2px rgb(36, 55, 70);
+}
+
+.rc-slider-handle {
+  background-color: rgb(36, 55, 70);
+  border-color: rgb(36, 55, 70);
+}
+
+.rc.slider-handle:hover {
+  border-color: rgb(36, 55, 70);
+}
+
+.rc.slider-handle-active:active {
+  border-color: rgb(36, 55, 70);
+}
+
