@@ -1,6 +1,6 @@
 import os
 import glob
-from webviz_config.themes import WebvizConfigTheme
+from webviz_config import WebvizConfigTheme
 from pkg_resources import get_distribution, DistributionNotFound
 
 try:
