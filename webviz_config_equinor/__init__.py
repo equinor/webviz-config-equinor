@@ -31,11 +31,11 @@ equinor_theme.assets = glob.glob(
     os.path.join(os.path.dirname(os.path.abspath(__file__)), "assets", "*")
 )
 
-equinor_theme.plotly_theme = go.layout.Template(
-    layout=go.Layout(
-        font =  dict(family = "Equinor"),
-        hoverlabel = {"font": {"family": "Equinor"}},
-        colorscale = {
+equinor_theme.plotly_theme = {
+    "layout": {
+        "font": dict(family="Equinor"),
+        "hoverlabel": {"font": {"family": "Equinor"}},
+        "colorscale": {
             "diverging": [
                 [0, "#007079"],
                 [0.1, "#66737D"],
@@ -74,7 +74,7 @@ equinor_theme.plotly_theme = go.layout.Template(
                 [1.0, "#f0f921"],
             ],
         },
-        colorway =  [
+        "colorway": [
             "#007079",
             "#66737D",
             "#7D0023",
@@ -93,5 +93,5 @@ equinor_theme.plotly_theme = go.layout.Template(
             "#D5EAF4",
             "#FF88A1",
         ],
-    )
-)
+    }
+}
