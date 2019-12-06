@@ -2,7 +2,6 @@ import os
 import glob
 from pkg_resources import get_distribution, DistributionNotFound
 
-import plotly.graph_objects as go
 from webviz_config import WebvizConfigTheme
 
 
