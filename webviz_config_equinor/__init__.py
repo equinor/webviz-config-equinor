@@ -32,7 +32,7 @@ equinor_theme.assets = glob.glob(
 
 equinor_theme.plotly_theme = {
     "layout": {
-        "font": dict(family="Equinor"),
+        "font": {"family": "Equinor"},
         "hoverlabel": {"font": {"family": "Equinor"}},
         "paper_bgcolor": "rgba(0,0,0,0)",
         "plot_bgcolor": "rgba(0,0,0,0)",
