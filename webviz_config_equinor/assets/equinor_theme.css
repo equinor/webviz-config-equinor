@@ -19,6 +19,7 @@
 
   cursor: progress;
 
+  z-index: 9999;
 }
 
 
