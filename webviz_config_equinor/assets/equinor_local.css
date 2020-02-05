@@ -24,7 +24,7 @@ h1, h2, h3, h4, h5, h6, p, a, div, button {
   height: 100px;
   width: 200px;
   background-size: contain;
-  background-image: url("./equinor_logo_primary.svg#red");
+  background-image: url("https://eds-static.equinor.com/logo/equinor-logo-primary.svg#red");
   background-repeat: no-repeat;
 }
 
