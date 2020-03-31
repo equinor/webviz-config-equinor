@@ -67,7 +67,6 @@ equinor_theme.plotly_theme = {
             "#243746",
             "#007079",
             "#80B7BC",
-            "#FF1243",
             "#919BA2",
             "#BE8091",
             "#B2D4D7",
