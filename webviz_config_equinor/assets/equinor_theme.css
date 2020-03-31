@@ -238,3 +238,13 @@ tr:nth-child(odd) {
   border-color: var(--menuLinkBackgroundHover);
 }
 
+label, legend {
+  display: block;
+  margin-bottom: 0px;
+}
+
+label > .label-body {
+  display: inline-block;
+  margin-left: 0.5rem;
+  font-weight: normal;
+}
