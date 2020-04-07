@@ -77,5 +77,8 @@ equinor_theme.plotly_theme = {
             "#D5EAF4",
             "#FF88A1",
         ],
+        "xaxis": {"exponentformat": "SI"},
+        "yaxis": {"exponentformat": "SI"},
+        "coloraxis": {"colorbar": {"exponentformat": "SI"}},
     }
 }
