@@ -1,6 +1,7 @@
 [![PyPI version](https://badge.fury.io/py/webviz-config-equinor.svg)](https://badge.fury.io/py/webviz-config-equinor)
-[![Build Status](https://travis-ci.org/equinor/webviz-config-equinor.svg?branch=master)](https://travis-ci.org/equinor/webviz-config-equinor)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/eafe7dfd1b274c02a78de59bb8b8778f)](https://www.codacy.com/app/anders-kiaer/webviz-config-equinor?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=equinor/webviz-config-equinor&amp;utm_campaign=Badge_Grade)
+[![Build Status](https://github.com/equinor/webviz-config-equinor/workflows/webviz-config-equinor/badge.svg)](https://github.com/equinor/webviz-config-equinor/actions?query=branch%3Amaster)
+[![Total alerts](https://img.shields.io/lgtm/alerts/g/equinor/webviz-config-equinor.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/equinor/webviz-config-equinor/alerts/)
+[![Language grade: Python](https://img.shields.io/lgtm/grade/python/g/equinor/webviz-config-equinor.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/equinor/webviz-config-equinor/context:python)
 [![Python 3.6 | 3.7 | 3.8](https://img.shields.io/badge/python-3.6%20|%203.7%20|%203.8-blue.svg)](https://www.python.org/)
 ![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)
 
