@@ -169,6 +169,7 @@ table {
     color: rgb(51, 51, 51);
     border: solid white;
     border-collapse: collapse;
+    font-variant-numeric: tabular-nums;
 }
 
 td {
