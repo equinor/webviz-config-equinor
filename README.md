@@ -2,7 +2,7 @@
 [![Build Status](https://github.com/equinor/webviz-config-equinor/workflows/webviz-config-equinor/badge.svg)](https://github.com/equinor/webviz-config-equinor/actions?query=branch%3Amaster)
 [![Total alerts](https://img.shields.io/lgtm/alerts/g/equinor/webviz-config-equinor.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/equinor/webviz-config-equinor/alerts/)
 [![Language grade: Python](https://img.shields.io/lgtm/grade/python/g/equinor/webviz-config-equinor.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/equinor/webviz-config-equinor/context:python)
-[![Python 3.6 | 3.7 | 3.8](https://img.shields.io/badge/python-3.6%20|%203.7%20|%203.8-blue.svg)](https://www.python.org/)
+[![Python 3.6 | 3.7 | 3.8 | 3.9](https://img.shields.io/badge/python-3.6%20|%203.7%20|%203.8%20|%203.9-blue.svg)](https://www.python.org/)
 ![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)
 
 # Webviz config theme for Equinor
