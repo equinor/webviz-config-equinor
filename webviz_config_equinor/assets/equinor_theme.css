@@ -13,12 +13,7 @@
   --bannerFontWeight: 700;
 }
 
-html {
-  font-size: 62.5%;
-}
-
 body {
-  font-size: 1.8em;
   line-height: 1.6;
   font-weight: 400;
   font-family: var(--menuLinkFont);
