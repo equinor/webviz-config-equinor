@@ -34,8 +34,7 @@ equinor_theme.plotly_theme = {
     "layout": {
         "font": {"family": "Equinor"},
         "hoverlabel": {"font": {"family": "Equinor"}},
-        "paper_bgcolor": "rgba(0,0,0,0)",
-        "plot_bgcolor": "rgba(0,0,0,0)",
+        "plot_bgcolor": "white",
         "colorscale": {
             "diverging": [
                 [0, "rgb(255, 18, 67)"],
@@ -77,8 +76,5 @@ equinor_theme.plotly_theme = {
             "#D5EAF4",
             "#FF88A1",
         ],
-        "xaxis": {"exponentformat": "SI"},
-        "yaxis": {"exponentformat": "SI"},
-        "coloraxis": {"colorbar": {"exponentformat": "SI"}},
     }
 }
