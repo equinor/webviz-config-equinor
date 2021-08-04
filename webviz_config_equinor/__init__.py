@@ -3,7 +3,7 @@ import glob
 from pkg_resources import get_distribution, DistributionNotFound
 
 from webviz_config import WebvizConfigTheme
-
+from plotly import colors
 
 try:
     __version__ = get_distribution(__name__).version
@@ -11,30 +11,43 @@ except DistributionNotFound:
     # package is not installed
     pass
 
+
 equinor_theme = WebvizConfigTheme(theme_name="equinor")
+equinor_alt1_theme = WebvizConfigTheme(theme_name="equinor-alt1")
+equinor_alt2_theme = WebvizConfigTheme(theme_name="equinor-alt2")
 
-equinor_theme.external_stylesheets = [
-    "https://eds-static.equinor.com/font/equinor-font.css"
-]
+for theme in [equinor_theme, equinor_alt1_theme, equinor_alt2_theme]:
+    theme.external_stylesheets = [
+        "https://eds-static.equinor.com/font/equinor-font.css"
+    ]
 
-equinor_theme.adjust_csp(
+    theme.adjust_csp(
+        {
+            "font-src": ["https://eds-static.equinor.com"],
+            "img-src": ["https://eds-static.equinor.com"],
+            "style-src": ["https://eds-static.equinor.com"],
+        },
+        append=True,
+    )
+
+    theme.assets = glob.glob(
+        os.path.join(os.path.dirname(os.path.abspath(__file__)), "assets", "*")
+    )
+
+    theme.plotly_theme = {
+        "layout": {
+            "font": {"family": "Equinor"},
+            "hoverlabel": {"font": {"family": "Equinor"}},
+            "plot_bgcolor": "white",
+            "xaxis": {"exponentformat": "SI"},
+            "yaxis": {"exponentformat": "SI"},
+            "coloraxis": {"colorbar": {"exponentformat": "SI"}},
+        }
+    }
+
+equinor_plotly_theme = equinor_theme.plotly_theme
+equinor_plotly_theme["layout"].update(
     {
-        "font-src": ["https://eds-static.equinor.com"],
-        "img-src": ["https://eds-static.equinor.com"],
-        "style-src": ["https://eds-static.equinor.com"],
-    },
-    append=True,
-)
-
-equinor_theme.assets = glob.glob(
-    os.path.join(os.path.dirname(os.path.abspath(__file__)), "assets", "*")
-)
-
-equinor_theme.plotly_theme = {
-    "layout": {
-        "font": {"family": "Equinor"},
-        "hoverlabel": {"font": {"family": "Equinor"}},
-        "plot_bgcolor": "white",
         "colorscale": {
             "diverging": [
                 [0, "rgb(255, 18, 67)"],
@@ -77,4 +90,29 @@ equinor_theme.plotly_theme = {
             "#FF88A1",
         ],
     }
-}
+)
+equinor_theme.plotly_theme = equinor_plotly_theme
+
+equinor_alt1_plotly_theme = equinor_alt1_theme.plotly_theme
+equinor_alt1_plotly_theme["layout"].update(
+    {
+        "colorscale": {
+            "diverging": colors.get_colorscale("piyg"),
+            "sequential": colors.get_colorscale("plotly3"),
+        },
+        "colorway": colors.qualitative.Plotly,
+    }
+)
+equinor_alt1_theme.plotly_theme = equinor_alt1_plotly_theme
+
+equinor_alt2_plotly_theme = equinor_alt2_theme.plotly_theme
+equinor_alt2_plotly_theme["layout"].update(
+    {
+        "colorscale": {
+            "diverging": colors.get_colorscale("spectral"),
+            "sequential": colors.get_colorscale("viridis"),
+        },
+        "colorway": colors.qualitative.D3,
+    }
+)
+equinor_alt2_theme.plotly_theme = equinor_alt2_plotly_theme
