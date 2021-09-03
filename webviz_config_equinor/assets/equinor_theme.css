@@ -130,10 +130,17 @@ hr {
     100% { opacity: 1; }
 }
 
-#logo {
-  margin: 20px 30px;
+#LogoLarge {
   height: 100px;
   width: 200px;
+  background-size: contain;
+  background-image: url("https://eds-static.equinor.com/logo/equinor-logo-primary.svg#red");
+  background-repeat: no-repeat;
+}
+
+#LogoSmall {
+  height: 64px;
+  width: 64px;
   background-size: contain;
   background-image: url("https://eds-static.equinor.com/logo/equinor-logo-primary.svg#red");
   background-repeat: no-repeat;
