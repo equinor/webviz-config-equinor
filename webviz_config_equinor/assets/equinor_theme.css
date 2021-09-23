@@ -139,10 +139,10 @@ hr {
 }
 
 #LogoSmall {
-  height: 64px;
-  width: 64px;
+  height: 56px;
+  width: 56px;
   background-size: contain;
-  background-image: url("https://eds-static.equinor.com/logo/equinor-logo-primary.svg#red");
+  background-image: url("./equinor_logo_symbol.svg"); /* https://github.com/equinor/design-system/issues/1575 */
   background-repeat: no-repeat;
 }
 
