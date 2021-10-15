@@ -17,8 +17,6 @@ setup(
     entry_points={
         "webviz_config_themes": [
             "equinor_theme = webviz_config_equinor:equinor_theme",
-            "equinor_alt1_theme = webviz_config_equinor:equinor_alt1_theme",
-            "equinor_alt2_theme = webviz_config_equinor:equinor_alt2_theme",
         ]
     },
     install_requires=["webviz-config>=0.0.48", "plotly"],
