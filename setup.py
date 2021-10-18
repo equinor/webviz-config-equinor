@@ -17,7 +17,7 @@ setup(
     entry_points={
         "webviz_config_themes": ["equinor_theme = webviz_config_equinor:equinor_theme"]
     },
-    install_requires=["webviz-config>=0.0.48"],
+    install_requires=["plotly", "webviz-config>=0.0.48"],
     tests_require=tests_require,
     extras_require={"tests": tests_require},
     setup_requires=["setuptools_scm~=3.2"],
