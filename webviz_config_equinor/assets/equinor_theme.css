@@ -2,8 +2,8 @@
   --menuLinkFont: Equinor;
   --menuLogoHeight: 75px;
   --menuBackground: #ffffff;
-  --menuLinkBackgroundHover: #E2E5E7;
-  --menuLinkBackgroundSelected: #EB0036;
+  --menuLinkBackgroundHover: #e2e5e7;
+  --menuLinkBackgroundSelected: #eb0036;
   --menuLinkColor: #66737e;
   --menuLinkColorSelected: #ffffff;
   --menuLinkFontStyle: normal;
@@ -24,7 +24,12 @@ div {
   font-family: var(--menuLinkFont);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin-top: 0;
   margin-bottom: 0;
   font-weight: 400;
@@ -37,7 +42,7 @@ h1 {
 }
 
 h2 {
-  font-size: 4.0rem;
+  font-size: 4rem;
   line-height: 1.25;
   margin-bottom: 1.8rem;
   margin-top: 1.8rem;
@@ -97,12 +102,11 @@ hr {
   margin-top: 3rem;
   margin-bottom: 3.5rem;
   border-width: 0;
-  border-top: 1px solid #E1E1E1;
+  border-top: 1px solid #e1e1e1;
 }
 
 ._dash-loading-callback {
-
-  animation: fadein 4.0s;
+  animation: fadein 4s;
 
   position: fixed;
   top: 0;
@@ -111,8 +115,7 @@ hr {
   height: 100%;
 
   background-image: url(./equinor_logo_animation.gif),
-                    radial-gradient(rgba(255, 255, 255, 0.9) 30%,
-                                    rgba(255, 255, 255, 0.5) 90%);
+    radial-gradient(rgba(255, 255, 255, 0.9) 30%, rgba(255, 255, 255, 0.5) 90%);
 
   background-size: 150px, cover;
   background-repeat: no-repeat;
@@ -125,9 +128,15 @@ hr {
 }
 
 @keyframes fadein {
-    0%   { opacity: 0; }
-    40%  { opacity: 0; }
-    100% { opacity: 1; }
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 #LogoLarge {
@@ -147,47 +156,51 @@ hr {
 }
 
 div.styledLogo.tab {
-    border: none;
-    background: transparent;
-    outline: none;
-    cursor: pointer;
-    text-align: left;
-    box-sizing: none;
-    padding: 20px 30px;
+  border: none;
+  background: transparent;
+  outline: none;
+  cursor: pointer;
+  text-align: left;
+  box-sizing: none;
+  padding: 20px 30px;
 }
 
 .webviz-config-markdown table {
-    color: rgb(51, 51, 51);
-    border: solid white;
-    border-collapse: collapse;
-    font-variant-numeric: tabular-nums;
+  color: rgb(51, 51, 51);
+  border: solid white;
+  border-collapse: collapse;
+  font-variant-numeric: tabular-nums;
 }
 
 .webviz-config-markdown td {
-    padding: 10px;
-    margin: 5px;
-    border: 1px solid white;
-    box-shadow: none;
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid white;
+  box-shadow: none;
 }
 
 .webviz-config-markdown th {
-    background-color: rgb(255, 18, 67);
-    color: white;
-    padding: 10px;
-    margin: 5px;
-    border: 1px solid white;
-    box-shadow: none;
+  background-color: rgb(255, 18, 67);
+  color: white;
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid white;
+  box-shadow: none;
 }
 
 .webviz-config-markdown tr:nth-child(even) {
-    background-color: rgb(255, 204, 207);
+  background-color: rgb(255, 204, 207);
 }
 
 .webviz-config-markdown tr:nth-child(odd) {
-    background-color: rgb(255, 231, 231);
+  background-color: rgb(255, 231, 231);
 }
 
-.button, button, input[type=submit], input[type=reset], input[type=button] {
+.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
   display: inline-block;
   height: 38px;
   padding: 0 30px;
@@ -207,20 +220,43 @@ div.styledLogo.tab {
   box-sizing: border-box;
 }
 
-.button:hover, button:hover, input[type=submit]:hover, input[type=reset]:hover, input[type=button]:hover, .button:focus, button:focus, input[type=submit]:focus, input[type=reset]:focus, input[type=button]:focus {
-  color: #333;
+.button:hover,
+button:not([disabled]):hover,
+input[type="submit"]:not([disabled]):hover,
+input[type="reset"]:not([disabled]):hover,
+input[type="button"]:not([disabled]):hover,
+.button:focus,
+button:not([disabled]):focus,
+input[type="submit"]:not([disabled]):focus,
+input[type="reset"]:not([disabled]):focus,
+input[type="button"]:not([disabled]):focus {
+  -webkit-box-shadow: inset 0px 0px 0px 50px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0px 0px 0px 50px rgba(0, 0, 0, 0.1);
   border-color: #888;
   outline: 0;
 }
 
-.button.button-primary, button.button-primary, input[type=submit].button-primary, input[type=reset].button-primary, input[type=button].button-primary {
-  color: #FFF;
+.button.button-primary,
+button.button-primary,
+input[type="submit"].button-primary,
+input[type="reset"].button-primary,
+input[type="button"].button-primary {
+  color: #fff;
   background-color: var(--menuLinkColor);
   border-color: var(--menuLinkColor);
 }
 
-.button.button-primary:hover, button.button-primary:hover, input[type=submit].button-primary:hover, input[type=reset].button-primary:hover, input[type=button].button-primary:hover, .button.button-primary:focus, button.button-primary:focus, input[type=submit].button-primary:focus, input[type=reset].button-primary:focus, input[type=button].button-primary:focus {
-  color: #FFF;
+.button.button-primary:hover,
+button.button-primary:hover,
+input[type="submit"].button-primary:hover,
+input[type="reset"].button-primary:hover,
+input[type="button"].button-primary:hover,
+.button.button-primary:focus,
+button.button-primary:focus,
+input[type="submit"].button-primary:focus,
+input[type="reset"].button-primary:focus,
+input[type="button"].button-primary:focus {
+  color: #fff;
   background-color: var(--menuLinkBackgroundHover);
   border-color: var(--menuLinkBackgroundHover);
 }
