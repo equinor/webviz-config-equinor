@@ -102,41 +102,7 @@ hr {
   margin-top: 3rem;
   margin-bottom: 3.5rem;
   border-width: 0;
-  border-top: 1px solid #e1e1e1;
-}
-
-._dash-loading-callback {
-  animation: fadein 4s;
-
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-
-  background-image: url(./equinor_logo_animation.gif),
-    radial-gradient(rgba(255, 255, 255, 0.9) 30%, rgba(255, 255, 255, 0.5) 90%);
-
-  background-size: 150px, cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-
-  cursor: progress;
-
-  z-index: 9999;
-}
-
-@keyframes fadein {
-  0% {
-    opacity: 0;
-  }
-  40% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+  border-top: 1px #e1e1e1 solid;
 }
 
 #LogoLarge {
