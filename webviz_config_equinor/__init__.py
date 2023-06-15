@@ -15,14 +15,14 @@ except DistributionNotFound:
 equinor_theme = WebvizConfigTheme(theme_name="equinor")
 
 equinor_theme.external_stylesheets = [
-    "https://eds-static.equinor.com/font/equinor-font.css"
+    "https://cdn.eds.equinor.com/font/equinor-font.css"
 ]
 
 equinor_theme.adjust_csp(
     {
-        "font-src": ["https://eds-static.equinor.com"],
-        "img-src": ["https://eds-static.equinor.com"],
-        "style-src": ["https://eds-static.equinor.com"],
+        "font-src": ["https://cdn.eds.equinor.com"],
+        "img-src": ["https://cdn.eds.equinor.com"],
+        "style-src": ["https://cdn.eds.equinor.com"],
     },
     append=True,
 )
