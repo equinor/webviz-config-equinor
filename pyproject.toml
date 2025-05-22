@@ -17,7 +17,6 @@ classifiers = [
     "Topic :: Multimedia :: Graphics",
     "Topic :: Scientific/Engineering",
     "Topic :: Scientific/Engineering :: Visualization",
-    "License :: Other/Proprietary License",
 ]
 dynamic = ["version"]
 dependencies = [
