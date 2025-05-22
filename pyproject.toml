@@ -5,15 +5,6 @@ requires = [
 ]
 build-backend = "setuptools.build_meta"
 
-[tool.setuptools]
-include-package-data = true
-
-[tool.setuptools.packages.find]
-exclude = ["tests*"]
-
-[tool.setuptools.package-data]
-"webviz_config_equinor" = ["assets/*"]
-
 [project]
 name = "webviz-config-equinor"
 description = "Webviz config Equinor theme"
@@ -41,3 +32,12 @@ tests = [
 
 [project.entry-points.webviz_config_themes]
 equinor_theme = "webviz_config_equinor:equinor_theme"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+exclude = ["tests*"]
+
+[tool.setuptools.package-data]
+"webviz_config_equinor" = ["assets/*"]
