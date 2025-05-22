@@ -1,0 +1,42 @@
+[build-system]
+requires = [
+    "setuptools >= 69",
+    "setuptools_scm >= 7",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "webviz-config-equinor"
+description = "Webviz config Equinor theme"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "Natural Language :: English",
+    "Topic :: Multimedia :: Graphics",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Scientific/Engineering :: Visualization",
+]
+dynamic = ["version"]
+dependencies = [
+    "plotly>=5.0",
+    "webviz-config>=0.0.48",
+]
+
+[project.optional-dependencies]
+tests = [
+    "black",
+]
+
+[project.entry-points.webviz_config_themes]
+equinor_theme = "webviz_config_equinor:equinor_theme"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+exclude = ["tests*"]
+
+[tool.setuptools.package-data]
+"webviz_config_equinor" = ["assets/*"]
