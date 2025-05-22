@@ -48,11 +48,11 @@ jobs:
           black --check webviz_config_equinor
         
       - name: 🚢 Build and deploy Python package
-        # if: github.event_name == 'release' && matrix.python-version == '3.8'
-        # env:
-        #   TWINE_USERNAME: __token__
-        #   TWINE_PASSWORD: ${{ secrets.pypi_webviz_token }}
+        if: github.event_name == 'release' && matrix.python-version == '3.8'
+        env:
+          TWINE_USERNAME: __token__
+          TWINE_PASSWORD: ${{ secrets.pypi_webviz_token }}
         run: |
           python -m pip install --upgrade twine build
           python -m build --wheel
-          # twine upload dist/*
+          twine upload dist/*
