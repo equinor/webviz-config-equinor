@@ -1,16 +1,14 @@
-import os
 import glob
-from pkg_resources import get_distribution, DistributionNotFound
+import importlib.metadata
+import os
 
-from webviz_config import WebvizConfigTheme
 from plotly import colors
+from webviz_config import WebvizConfigTheme
 
 try:
-    __version__ = get_distribution(__name__).version
-except DistributionNotFound:
-    # package is not installed
+    __version__ = importlib.metadata.version(__name__)
+except importlib.metadata.PackageNotFoundError:
     pass
-
 
 equinor_theme = WebvizConfigTheme(theme_name="equinor")
 
