@@ -1,6 +1,6 @@
 [![PyPI version](https://badge.fury.io/py/webviz-config-equinor.svg)](https://badge.fury.io/py/webviz-config-equinor)
 [![Build Status](https://github.com/equinor/webviz-config-equinor/workflows/webviz-config-equinor/badge.svg)](https://github.com/equinor/webviz-config-equinor/actions?query=branch%3Amaster)
-[![Python 3.8 | 3.9](https://img.shields.io/badge/python-3.6%20|%203.7%20|%203.8%20|%203.9%20|%203.10%20|%203.11%20|%203.12-blue.svg)](https://www.python.org/)
+[![Python 3.8 | 3.9](https://img.shields.io/badge/python-3.8%20|%203.9%20|%203.10%20|%203.11%20|%203.12-blue.svg)](https://www.python.org/)
 ![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)
 
 # Webviz config theme for Equinor
